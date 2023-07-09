@@ -8,10 +8,9 @@ import java.time.LocalDateTime;
 @RestController
 public class HelloWorldController {
     @GetMapping("/hello")
-    public Date date() {
+    public LocalDateTime date() {
 
-        Date date = new Date(LocalDateTime.now());
-        return date;
+        return LocalDateTime.now();
 
     }
 }
